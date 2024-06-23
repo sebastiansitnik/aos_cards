@@ -1,0 +1,55 @@
+.stat-box {
+    border: solid 1px black ;
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    .triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.top {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .text-box {
+
+                h6 {
+                    margin-top: 100px;
+                }
+
+                p {
+                    font-size: 2em;
+                    margin-left: 6px;
+                    margin-top: -10px;
+                }
+            }
+
+          }
+          
+        &.right {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+          }
+          
+        &.bottom {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          
+        &.left {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+          }
+    }
+}
