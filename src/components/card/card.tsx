@@ -20,5 +20,17 @@ function LeftColumn() {
 }
 
 function RightColumn() {
-    return <div>RightColumn</div>
+    return <div className='right-column'>
+        <Header
+            scrollCategory={'Spearhead warscroll'}
+            scrollName={'vampire lord'}/>
+
+    </div>
+}
+
+function Header(props: any) {
+    return <div className={'header'}>
+        <h2>* {props.scrollCategory.toUpperCase()} *</h2>
+        <h1>{props.scrollName.toUpperCase()}</h1>
+    </div>
 }
