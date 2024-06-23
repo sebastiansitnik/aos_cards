@@ -14,7 +14,7 @@ export default Card;
 
 
 function LeftColumn() {
-    return <div>
+    return <div className='left-column'>
         <StatBox></StatBox>
     </div>
 }
