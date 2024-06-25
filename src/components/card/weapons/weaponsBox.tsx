@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Weapon, WeaponsContainer } from "./WeaponTypes";
-import './weaponsBox.scss'
+import rangedIcon from '../../../icons/ranged.png'
+import meleeIcon from '../../../icons/melee.png'
 
 const WeaponsBox: FC<WeaponsContainer> = ({
   weapons
@@ -31,6 +32,9 @@ const WeaponsBox: FC<WeaponsContainer> = ({
         <table>
           <thead>
           <tr>
+            <th className={'icon'}>
+              <img src={rangedIcon} alt={'ranged'}></img>
+            </th>
             <th className={'ranged-label'}>RANGED WEAPONS</th>
             <th className={'range-label'}>Range</th>
             <th className={'attacks-label'}>Attacks</th>
@@ -57,6 +61,9 @@ const WeaponsBox: FC<WeaponsContainer> = ({
         <table>
           <thead>
           <tr>
+            <th className={'icon'}>
+              <img src={meleeIcon} alt={'melee'}></img>
+            </th>
             <th className={'melee-label'}>MELEE WEAPONS</th>
             <th className={'hidden-label'}></th>
             <th className={'attacks-label'}>Attacks</th>
@@ -85,6 +92,7 @@ const WeaponsBox: FC<WeaponsContainer> = ({
   const renderRangedWeapon = (weapon: Weapon) => {
     return (
       <tr>
+        <td></td>
         <td>{weapon.name}</td>
         <td>{weapon.range}</td>
         <td>{weapon.attack}</td>
@@ -100,6 +108,7 @@ const WeaponsBox: FC<WeaponsContainer> = ({
   const renderMeleeWeapon = (weapon: Weapon) => {
     return (
       <tr>
+        <td></td>
         <td>{weapon.name}</td>
         <td></td>
         <td>{weapon.attack}</td>

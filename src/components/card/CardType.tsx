@@ -1,4 +1,4 @@
-export interface Card {
+export interface CardInterface {
   cardStats: CardStatsInterface,
   lore: string,
   header: HeaderInterface,
@@ -16,8 +16,9 @@ export interface CardStatsInterface {
 }
 
 export interface HeaderInterface {
-  warscrollCategory: string,
+  warscrollCategory: string
   unitName: string
+  mount: string
 }
 
 export interface WeaponsInterface {
@@ -26,6 +27,7 @@ export interface WeaponsInterface {
 }
 
 export interface WeaponInterface {
+  id: string,
   name: string,
   type: string,
   range?: string,
@@ -42,10 +44,12 @@ export interface AbilitiesInterface {
 }
 
 export interface AbilityInterface {
+  id: string,
   type: string,
   name: string,
   description: string
   icon: string
+  lore: string
 }
 
 export interface KeywordsInterface {

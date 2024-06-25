@@ -1,0 +1,34 @@
+.keywords {
+  display: flex;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .keywords-label {
+    align-items: center;
+    background: rgba(62,18,18,0.79);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  .both-keywords {
+    width: 100%;
+    border-top: 2px solid rgba(62,18,18,0.79);
+    border-bottom: 2px solid rgba(62,18,18,0.79);
+
+    div {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .unit-keywords {
+      border-bottom: 2px solid rgba(62,18,18,0.79);
+    }
+  }
+}

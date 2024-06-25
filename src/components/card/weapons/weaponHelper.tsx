@@ -11,6 +11,7 @@ const weaponsInterfaceToWeaponsContainer = (weaponsInterface: WeaponsInterface) 
 
   for (let i = 0; i < rangedWeaponsFromInterface.length; i++) {
     rangedWeapons[i] = {
+      id: rangedWeaponsFromInterface[i].name || '-',
       name: rangedWeaponsFromInterface[i].name || '-',
       type: rangedWeaponsFromInterface[i].type || '-',
       range: rangedWeaponsFromInterface[i].range || '-',
@@ -25,6 +26,7 @@ const weaponsInterfaceToWeaponsContainer = (weaponsInterface: WeaponsInterface) 
 
   for (let i = 0; i < meleeWeaponsFromInterface.length; i++) {
     meleeWeapons[i] = {
+      id: rangedWeaponsFromInterface[i].name || '-',
       name: meleeWeaponsFromInterface[i].name || '-',
       type: meleeWeaponsFromInterface[i].type || '-',
       range: meleeWeaponsFromInterface[i].range || '-',

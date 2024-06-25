@@ -8,6 +8,7 @@ export interface Weapons {
 }
 
 export interface Weapon {
+  id: string,
   name: string,
   type: string,
   range?: string,

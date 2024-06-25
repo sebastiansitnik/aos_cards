@@ -4,6 +4,7 @@
     height: 200px;
     margin: 25px 25px 25px 25px;
     color: antiquewhite;
+    background: black;
 
     .triangle {
         position: absolute;
@@ -19,18 +20,18 @@
         }
 
         &.top {
-            top: 0;
+            top: 50px;
             left: 50%;
             transform: translateX(-50%);
 
             .text-box {
 
                 h6 {
-                    margin-top: 100px;
                 }
 
                 p {
                   margin-top: -10px;
+                  padding-top: 20px;
                 }
             }
 
@@ -41,7 +42,7 @@
             right: 0;
             transform: translateY(-50%);
             transform: rotate(90deg);
-            right: 50px;
+            right: 30px;
 
             .text-box {
               
@@ -55,7 +56,7 @@
                 position: relative;
                 margin: 0;
                 transform: rotate(-90deg);
-                bottom: 10px;
+                bottom: 0px;
               }
             }
           }
