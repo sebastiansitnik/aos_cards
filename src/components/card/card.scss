@@ -1,13 +1,34 @@
 .card {
 
     font-family: 'Courier New', Courier, monospace;
+
+    border: 2px solid black;
+    height: 1240px;
+    width: 1754px;
     
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 
     .left-column {
+
         background-color: black;
         width: 250px;
-        height: 100%;
+        height: 1240px;
+
+        .lore-text {
+            margin-left: 5px;
+            margin-right: 5px;
+            color: white;
+            text-align: left;
+        }
+    }
+
+    .right-column {
+
+        display: block;
+        align-items: center;
+        width: 100%;
+
+        .header {
+        }
     }
 }

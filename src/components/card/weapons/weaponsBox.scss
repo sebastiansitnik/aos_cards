@@ -1,0 +1,70 @@
+.weapons-container {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+      background: brown;
+
+      th {
+        color: antiquewhite;
+      }
+    }
+
+    tbody {
+
+      td {
+        border-bottom: 0.5px solid black;
+
+        &:not(:first-child) {
+          border-left: 0.5px solid black;
+        }
+      }
+    }
+
+    .ranged-label {
+      width: 32%;
+    }
+
+    .melee-label {
+      width: 32%;
+    }
+
+    .hidden-label {
+      width: 10%;
+    }
+
+    .range-label {
+      width: 10%;
+    }
+
+    .attacks-label {
+      width: 10%;
+    }
+
+    .hit-label {
+      width: 5.7%;
+    }
+
+    .wound-label {
+      width: 8.6%;
+    }
+
+    .rend-label {
+      width: 6.4%;
+    }
+
+    .damage-label {
+      width: 9.3%;
+    }
+
+    .ability-label {
+      width: 17.2%;
+    }
+  }
+
+
+}
