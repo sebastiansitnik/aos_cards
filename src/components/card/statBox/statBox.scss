@@ -4,7 +4,11 @@
     height: 200px;
     margin: 25px 25px 25px 25px;
     color: antiquewhite;
-    background: black;
+    background-color: brown;
+    background-image: url("../../../icons/stats.png");
+    background-position: center;
+    background-size: contain;
+
 
     .triangle {
         position: absolute;
@@ -26,9 +30,6 @@
 
             .text-box {
 
-                h6 {
-                }
-
                 p {
                   margin-top: -10px;
                   padding-top: 20px;
@@ -46,12 +47,6 @@
 
             .text-box {
               
-              h6 {
-                position: relative;
-                margin: 0;
-                bottom: 20px;
-              }
-              
               p {
                 position: relative;
                 margin: 0;
@@ -68,7 +63,7 @@
             transform: rotate(180deg);
             bottom: 50px;
 
-            h6 {
+            h4 {
               position: relative;
               transform: rotate(-180deg);
             }
@@ -76,7 +71,7 @@
             p {
               position: relative;
               transform: rotate(-180deg);
-              bottom: 10px;
+              bottom: 0;
             }
 
           }
